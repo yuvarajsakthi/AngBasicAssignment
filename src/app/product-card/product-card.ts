@@ -13,4 +13,10 @@ export class ProductCard {
   inStock: boolean = true;
   imageUrl: string = 'ProductImg.png';
   inActive:boolean = false;
+
+  click() {
+    this.inStock = !this.inStock;
+    this.inActive = !this.inActive;
+  }
+
 }

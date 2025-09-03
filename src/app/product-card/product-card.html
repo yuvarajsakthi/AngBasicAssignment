@@ -1,18 +1,17 @@
+<h2>Product Card</h2>
 <div class="card">
   <h2>{{ productName }}</h2>
   <p>Price: ₹{{ price }}</p>
 
-  @if (inStock) {
-    <p >Status: In Stock</p>
-  } @else {
-    <p >Status: Out of Stock</p>
-  }
+  <p [ngClass]="inStock ? 'instock' : 'outstock'">
+    Status: {{ inStock ? 'In Stock' : 'Out of Stock' }}
+  </p>
 
   <img [src]="imageUrl" alt="Product Image" width="150" />
 
   <br />
-  
-  <button [disabled]="inActive">Buy Now</button>
 
-  <button [disabled]="inStock">Return Product</button>
+  <button [disabled]="inActive" (click)="click()">Buy Now</button>
+
+  <button [disabled]="inStock" (click)="click()">Return Product</button>
 </div>

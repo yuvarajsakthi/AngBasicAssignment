@@ -1,0 +1,76 @@
+.card {
+  width: 300px;
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background: #ffffff;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.card img {
+  margin: 15px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.instock {
+  color: green !important;
+  font-weight: bold;
+}
+
+.outstock {
+  color: red !important;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 8px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+button:first-of-type {
+  background: #007bff;
+  color: #fff;
+}
+
+button:first-of-type:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+button:last-of-type {
+  background: #dc3545;
+  color: #fff;
+}
+
+button:last-of-type:hover:not(:disabled) {
+  background: #a71d2a;
+}
