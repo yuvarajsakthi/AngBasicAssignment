@@ -1,1 +1,18 @@
-<p>product-card works!</p>
+<div class="card">
+  <h2>{{ productName }}</h2>
+  <p>Price: ₹{{ price }}</p>
+
+  @if (inStock) {
+    <p >Status: In Stock</p>
+  } @else {
+    <p >Status: Out of Stock</p>
+  }
+
+  <img [src]="imageUrl" alt="Product Image" width="150" />
+
+  <br />
+  
+  <button [disabled]="inActive">Buy Now</button>
+
+  <button [disabled]="inStock">Return Product</button>
+</div>
