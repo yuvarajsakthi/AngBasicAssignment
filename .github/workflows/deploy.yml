@@ -33,4 +33,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages       # target branch for GitHub Pages
-          folder: dist/browser  # replace with your Angular dist folder
+          folder: dist/AngBasicAssignment  # replace with your Angular dist folder
